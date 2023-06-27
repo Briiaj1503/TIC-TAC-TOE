@@ -17,7 +17,7 @@ html {
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #ffffff;
-  box-shadow: 10 5 5 rgba(0, 0, 0, 0.1);
+  text-shadow:5px 5px 5px #2b2929;
   text-decoration: underline;
   text-decoration-style: dashed;
 }
@@ -28,6 +28,7 @@ html {
   top: 70%;
   left: 50%;
   border: 2px solid white;
+  border-radius: 6px;
   height: 595px;
   width: 470px;
   box-shadow: 10px 5px 5px black;
@@ -42,24 +43,24 @@ html {
   flex-wrap: wrap;
   gap: 2vmin;
 }
-.button-option {
+.opcion-btn {
   background: #ffffff;
   height: 22vmin;
   width: 22vmin;
-  border: none;
-  border-radius: 8px;
+  border:none;
+  border-radius: 40px;
   font-size: 12vmin;
   color: #e16391;
   text-shadow: 20px 0px 20px rgb(235, 123, 158), 0 0 20px rgb(94, 232, 211);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
-#restart {
+#reanudar {
   font-size: 1.3em;
   padding: 1em;
   border-radius: 10px;
   background-color: #0a0027;
   color: #ffffff;
-  border: none;
+  border: 1px solid #ffffff;
   position: relative;
   margin: 1.5em auto 0 auto;
   display: block;
@@ -83,9 +84,8 @@ html {
   background-color: #0a0027;
   color:#ffffff;
   border-radius: 0.2em;
-  border: none;
 }
-#message {
+#mensaje {
 color: #ffffff;
 text-align: center;
 text-shadow: 20px 0px 20px rgb(19, 19, 18), 0 0 20px rgb(230, 96, 187);
