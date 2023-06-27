@@ -3,63 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIC TAC TOE</title>
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
   </head>
   <body>
-    <h1>TIC-TAC-TOE</h1>
-    <div id="intro-screen" class="center">
-        <h2> Elige tu jugador:</h2>
-        <button type="button" id="escoge-x" class="escoge">X</button>
-        <button type="button" id="escoge-o" class="escoge">O</button>
+    <div class="box">
+      <div class="Juego">
+        <button class="button-option"></button>
+        <button class="button-option"></button>
+        <button class="button-option"></button>
+        <button class="button-option"></button>
+        <button class="button-option"></button>
+        <button class="button-option"></button>
+        <button class="button-option"></button>
+        <button class="button-option"></button>
+        <button class="button-option"></button>
       </div>
-      
-      <div id="enemy-screen" class="center hidden">
-        <h2> Jugar Contra:</h2>
-        <button type="button" id="jugador-H" class="escoger">Jugador H</button>
-        <button type="button" id="jugador-cpu" class="escoger">CPU</button>
-      </div>
-        
-      <div id="juego en pantalla" class="center hidden">
-        <!-- cada celda tiene una celda de identificación seguida de una fila de celda y una columna de celda -->
-        <table class="center">
-          <tr>
-            <td>
-              <button type="button" class="cell" id="cell00"></button>
-            </td>
-            <td>
-              <button type="button" class="cell" id="cell01"></button>
-            </td>
-            <td>
-              <button type="button" class="cell" id="cell02"></button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <button type="button" class="cell" id="cell10"></button>
-            </td>
-            <td>
-              <button type="button" class="cell" id="cell11"></button>
-            </td>
-            <td>
-              <button type="button" class="cell" id="cell12"></button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <button type="button" class="cell" id="cell20"></button>
-            </td>
-            <td>
-              <button type="button" class="cell" id="cell21"></button>
-            </td>
-            <td>
-              <button type="button" class="cell" id="cell22"></button>
-            </td>
-          </tr>
-        </table>
-        <button type="button" id="restart">Restart</button>
-      <div>
-
+      <button id="restart">Reanudar</button>
+    </div>
+  
+    </div>
+    <div class="popup hide">
+      <p id="message">Sample Message</p>
+      <button id="Nuevo-juego">Nuevo Juego</button>
+    </div>
     <script src="./media.js"></script>
   </body>
 </html>
