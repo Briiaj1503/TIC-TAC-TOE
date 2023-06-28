@@ -1,36 +1,38 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TIC TAC TOE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div class="box">
-      <br>
-      <h1 class="tittle">TIC-TAC-TOE </h1>
-      <br>
-      <div class="Juego">
-        <button class="opcion-btn"></button>
-        <button class="opcion-btn"></button>
-        <button class="opcion-btn"></button>
-        <button class="opcion-btn"></button>
-        <button class="opcion-btn"></button>
-        <button class="opcion-btn"></button>
-        <button class="opcion-btn"></button>
-        <button class="opcion-btn"></button>
-        <button class="opcion-btn"></button>
-      </div>
-      <button id="reanudar">Reanudar</button>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="box">
+   
+    <div class="wrapper">
+      <h1>tic-tac-toe</h1>
+        <div class="container">
+          <button class="button-option"></button>
+          <button class="button-option"></button>
+          <button class="button-option"></button>
+          <button class="button-option"></button>
+          <button class="button-option"></button>
+          <button class="button-option"></button>
+          <button class="button-option"></button>
+          <button class="button-option"></button>
+          <button class="button-option"></button>
+        </div>
+        <button id="restart">Reanudar</button>
+   </div>
+  </div>
+   
+   <div class="popup hide">
+    <div class="borde">
+      <p id="message">Sample Message</p>
+       <button id="new-game">Nuevo Juego</button>
     </div>
-  
-    </div>
-    <div class="popup hide">
-      <p id="mensaje">Sample Message</p>
-      <button id="Nuevo-juego">Nuevo Juego</button>
-    </div>
+  </div>
     <script src="./media.js"></script>
-  </body>
+</body>
+<script src="https://kit.fontawesome.com/39efb12a6f.js" crossorigin="anonymous"></script>
 </html>
