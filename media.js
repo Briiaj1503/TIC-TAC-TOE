@@ -43,7 +43,7 @@ const winFunction = (letter) => {
 
 const drawFunction = () => {
   disableButtons();
-  msgRef.innerHTML = "&#x1F60E; <br> It's a Draw";
+  msgRef.innerHTML = "&#x1F60E; <br> ES UN EMPATE";
 };
 
 newgameBtn.addEventListener("click", () => {
@@ -65,34 +65,54 @@ const winChecker = () => {
     if (element1 != "" && (element2 != "") & (element3 != "")) {
       if (element1 == element2 && element2 == element3) {
         winFunction(element1);
+        return true;
       }
     }
   }
+  return false;
 };
 
 btnRef.forEach((element) => {
   element.addEventListener("click", () => {
-    if (xTurn) {
-      xTurn = false;
-      element.innerText = "X";
-      element.disabled = true;
-    } else {
-      xTurn = true;
+    // if (xTurn) {
+    // xTurn = false;
+    element.innerText = "X";
+    element.disabled = true;
 
-      let mat = Math.floor(Math.random() * 9);
-
-      console.log(btnRef);
-      setTimeout(() => {
-        btnRef[mat].innerText = "O";
-      }, 1000);
-
-      element.disabled = true;
-    }
     count += 1;
-    if (count == 9) {
-      drawFunction();
+
+    if (!winChecker()) {
+      if (count == 9) {
+        drawFunction();
+      }else {
+        let mat = Math.floor(Math.random() * 9);
+  
+        let arreglo = [];
+    
+        for (let index = 0; index < 9; index++) {
+          if (btnRef[index].textContent === "") {
+            arreglo.push(index);
+          }
+        }
+    
+        let mati = Math.floor(Math.random() * arreglo.length);
+        let valor = arreglo[mati];
+        btnRef[valor].innerText = "O";
+        element.disabled = true;
+        btnRef[mat].disabled = false;
+        // }
+        count += 1;
+        winChecker();
+      }
     }
-    winChecker();
   });
 });
+
 window.onload = enableButtons;
+
+function noSobre(params) {
+  console.log(btnRef);
+
+  if (btnRef == " ") {
+  }
+}
