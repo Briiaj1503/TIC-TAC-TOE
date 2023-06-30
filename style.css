@@ -2,18 +2,18 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
+  font-family: "Press Start 2P", cursive;
 }
 body {
   height: 100vh;
   background-image: url(./images.jpg);
 }
 html {
-  font-size: 16px;
+  font-size: 12px;
 }
 h1 {
-  margin-top: 5vmin;
-  font-size: 10vmin;
+  margin-top: 10vmin;
+  font-size: 5vmin;
   text-align: center;
   color: #ffffff;
   text-shadow: 5px 5px 5px #2b2929;
@@ -23,8 +23,8 @@ h1 {
 
 .wrapper {
   box-shadow: 10px 5px 5px rgb(148, 137, 91);
-  background: linear-gradient(135deg, #d1914d, #fb3067);
-  border: 2px solid #ffffff;
+  background: linear-gradient(135deg, #4fd14d, #30d2fb);
+  border: 1vmin solid #ffffff;
   border-radius: 3vmin;
   width: 80vmin;
   height: 115vmin;
@@ -47,19 +47,22 @@ h1 {
   height: 19vmin;
   width: 19vmin;
   border: none;
-  font-size: 12vmin;
-  color: #cc315f;
+  border-radius: 3vmin;
+  font-size: 8vmin;
+  color: #23a99e;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 #restart {
-  font-size: 30px;
-  padding: 1em;
-  border-radius: 8px;
+  font-size: 4vmin;
+  margin-left: 25vmin;
+  width: 35vmin;
+  padding: 1vmin;
+  border-radius: 8vmin;
   background-color: #0a0027;
   color: #ffffff;
   border: none;
   position: relative;
-  margin: 1.5em auto 0 auto;
+  margin: 1.5vmin auto 0 auto;
   display: block;
 }
 .popup {
@@ -77,8 +80,8 @@ h1 {
 #new-game {
   align-items: center;
   margin-top: 10vmin;
-  margin-left: 35vmin;
-  font-size: 0.6em;
+  margin-left: 25vmin;
+  font-size: 6vmin;
   padding: 0.5em 1em;
   background-color: #0a0027;
   color: #ffffff;
@@ -92,12 +95,11 @@ h1 {
   color: #ffffff;
   text-align: center;
   margin-top: 5vmin;
-  font-size: 1em;
+  font-size: 8vmin;
 }
 .borde {
   box-shadow: 10px 5px 5px rgb(148, 137, 91);
-  background: linear-gradient(135deg, #d1914d, #fb3067);
-  background: linear-gradient(135deg, #d1914d, #fb3067);
+  background: linear-gradient(135deg, #48bd61, #16d6f3);
   align-items: center;
   width: 120vmin;
   height: 60vmin;
